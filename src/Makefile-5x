@@ -47,13 +47,13 @@ MORE_CFLAGS=\
  -funroll-loops \
  -ffast-math -fomit-frame-pointer \
  -fno-strength-reduce -finline-functions \
- -fsingle-precision-constant
+ -fsingle-precision-constant -G0
 
 OPTIM_CFLAGS= -O2
 
 CFLAGS = $(DEFAULT_CFLAGS) $(MORE_CFLAGS)
 
-LIBS = -lpspirkeyb -lSDL_image -lSDL -lpng -ljpeg -lm -lc -lz -lpsphprm -lpspgu -lpsppower -lpspaudio -lpsprtc
+LIBS = -lpspirkeyb -lSDL_image -lSDL -lGL -lpspvfpu -lpng -ljpeg -lm -lc -lz -lpsphprm -lpspgu -lpsppower -lpspaudio -lpsprtc
 
 BUILD_PRX=1
 
